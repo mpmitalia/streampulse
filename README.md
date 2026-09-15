@@ -71,6 +71,3 @@ See `/superset` for the exported dashboard JSON and `/Dashboard` for screenshots
 4. Run `notebook/02_exploratory_analysis.ipynb` for charts and summary tables
 5. Connect Apache Superset to the same database and import the dashboard from `/superset` (or rebuild charts using the queries in `/sql`)
 
-## Notes on Adaptations
-
-The original project brief called for a "browse → play → complete" funnel; this schema doesn't generate a separate browse-only event (every session already has plays attached), so `activation_funnel.sql` instead measures early-life activation, which surfaced the day-30 retention finding above. Full reasoning in `sql/README.md`.
