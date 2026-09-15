@@ -49,7 +49,6 @@ Synthetic but structurally realistic: 60,000 users, 8,800 tracks, ~2.85M session
 | `session_gaps_reengagement.sql` | LAG()-based detection of users who churned 30+ days then returned |
 | `activation_funnel.sql` | Signup → first session → week-1 return → day-30 active |
 
-Full documentation of adaptations and validated results in `sql/README.md`.
 
 ## Dashboard
 
