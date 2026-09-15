@@ -1,0 +1,45 @@
+# Data files — too large for git, regenerate via notebook/01_data_generation.ipynb
+data/*.csv
+data/*.csv.gz
+
+# The cloned Apache Superset source (from the Docker setup attempt) — not your code
+superset/superset/
+superset/docker-compose*.yml
+superset/Dockerfile
+superset/*.md
+superset/requirements*
+superset/setup.py
+superset/pyproject.toml
+superset/superset-frontend/
+superset/superset-websocket/
+superset/tests/
+superset/scripts/
+superset/docker/
+
+# Keep only your own exported dashboard JSON + screenshots in superset/
+!superset/*.json
+!superset/*.png
+!superset/*.jpg
+!superset/README.md
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment/secrets
+.env
+*.env
+
+# Superset local runtime files (if superset_home ends up inside the project folder)
+superset_home/
+*.db
